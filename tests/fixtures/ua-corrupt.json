@@ -1,0 +1,1 @@
+﻿{ "files": [ { "path": "src/index.ts"  // 缺少闭合括号，JSON损坏

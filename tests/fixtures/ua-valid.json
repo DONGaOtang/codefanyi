@@ -1,0 +1,20 @@
+﻿{
+  "files": [
+    { "path": "src/index.ts", "type": "entry", "summary": "应用入口" },
+    { "path": "src/login.ts", "type": "component", "summary": "登录模块" },
+    { "path": "src/order.ts", "type": "component", "summary": "订单处理" }
+  ],
+  "nodes": [
+    { "id": "node_1", "name": "App", "type": "entry" },
+    { "id": "node_2", "name": "LoginPage", "type": "page" },
+    { "id": "node_3", "name": "OrderService", "type": "service" }
+  ],
+  "edges": [
+    { "from": "node_1", "to": "node_2", "relation": "routes_to" },
+    { "from": "node_2", "to": "node_3", "relation": "depends_on" }
+  ],
+  "domains": [
+    { "name": "auth", "nodes": ["node_2"] },
+    { "name": "business", "nodes": ["node_3"] }
+  ]
+}

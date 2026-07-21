@@ -1,0 +1,7 @@
+﻿node_modules/
+dist/
+.env
+.ua/
+.understand-anything/
+.codegraph/
+.explain-anything/cache/
